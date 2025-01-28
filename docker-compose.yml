@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER=usr_polimusic_gr22
+      - DB_PASSWORD=Politecnica1
+      - DB_NAME=BDD_PoliMusic_Song2
+      - DB_SERVER=sql-polimusic-server.database.windows.net
+      - NODE_ENV=production
+    restart: always
